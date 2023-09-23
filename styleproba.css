@@ -1,0 +1,381 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .hero-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .hero-text-container {
+    flex: 0 0 calc(100% - 350px);
+    max-width: calc(100% - 350px);
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p.intro-text {
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  
+  p.secondary-text {
+    color: #e5e7eb;
+    font-size: 18px;
+  }
+  
+  .image-container {
+    height: 424px;
+    padding: 10px 0;
+  }
+  
+  img {
+    width: 424px;
+    height: 345px;
+  }
+
+
+/* UTILITIES */
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #F2F1F6;
+    color: #9595A5;
+  }
+  
+  .nav-links a {
+    color: #9595A5;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #C4C4D9;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+  /* DROPDOWN MENU */
+  .services {
+    position: relative; 
+  }
+  
+  .dropdown {
+    background-color: #C4C4D9;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+  
+  .services:hover .dropdown {
+    display: block;
+  }
+
+    /* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F1F6;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    color: #9595A5;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white;*/
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 60%;
+    right: 40%;
+}
+
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.headings2{
+    font-family: century;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition:  .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* About me section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*Portfolio Section */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(189, 189, 189, 0.9);
+    color: rgb(54, 54, 54);
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 400px;
+    height: 280px;
+    margin: 10px;
+}
+
+a img {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    transition: all .5s ease;
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    }
+
+    a img:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+    box-shadow: 0 0 10px white;
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity
+}
+
+/*Contact section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(189, 189, 189, 0.9);
+    color: rgb(54, 54, 54);
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+
+
+
+
+
+  /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+   .menu {
+      display:none;
+      position: absolute;
+      background-color:#C4C4D9;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+    }
+  
+    .menu li:hover {
+      display: inline-block;
+      background-color:#C4C4D9;
+      transition: 0.3s ease;
+    }
+  
+    .menu li + li {
+      margin-top: 12px;
+    }
+  
+    input[type=checkbox]:checked ~ .menu {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .dropdown {
+      left: 50%;
+      top: 30px;
+      transform: translateX(35%);
+    }
+  
+    .dropdown li:hover {
+      background-color: #C4C4D9;
+    }
+  }
+  /* iPhone */
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { 
+
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 10px;
+    }
+
+
+
+}

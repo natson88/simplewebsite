@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger"> 
+                
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+    
+    
+    
+    
+        </nav>
+        </header>
+        <script src="script.js"></script>
+        <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM <br> NATALIA </h1> 
+            <h1 class="headings2">A wannabe UX/UI designer with a passion for visual design.<br> Feel free to roam around my portfolio!</h1><br>
+            
+            <form action="#contact" method="get">
+            <button class="btn" type="submit">Hire me</button>
+        </form>
+        </div>
+    </section>
+
+
+   
+
+    <section id="portfolio">
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+            <a href="intro.html"><img src="intromain.png"></a>
+            <a href="bookingtable.html"><img src="mini1.png"></a>
+            <a href="dogshelter.html"><img src="monitor.png"></a>
+            <a href="kuba.html"><img src="kuba1.png"></a>
+            <a href="uiexamples.html"><img src="ui1.png"></a>
+            <a href="comingsoon.html"><img src="img1.jpg"></a>
+           
+        </div>
+    </section>
+
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="icon2.png" alt="">                <h1 class="headings">UX/UI Projects</h1>
+                <p>UX case studies</p>
+            </div>
+            <div class="box">
+                <img src="icon1.png" alt="">
+                <h1 class="headings">Websites <br>Design</h1>
+                <p>Websites projects</p>
+            </div>
+            <div class="box">
+                <img src="icon3.png" alt="">
+                <h1 class="headings">Photography</h1>
+                <p> Examples of my 
+                <a href="http://www.shutterstock.com/g/Natson88/sets/321381415?rid=249136102" target="_blank"> photography </a>
+            </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="https://formsubmit.co/kruknatalia@gmail.com" method="POST" class="form"/>
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <input type="hidden" name="_next" value="https://natson88.netlify.app/thanks.html">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">
+          <img src="gory.png" alt="" max-width: 60%;
+          max-height: auto;>
+          <div id="intro">
+            <h2> NATALIA KRUK</h2>
+            <p>Reliable, highly motivated and hard working. I am an elementary school teacher with master degree in child care and education. My strongest skills are creativity, emphaty and discipline. Over the years, I have gained valuable experience in many different fields, starting from hospitality work in the US and Australia, through working with elderly people in Germany to being a data center team leader and supervisor in Austria. I can communicate in three languages.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
